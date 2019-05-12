@@ -1,0 +1,36 @@
+// Calcular o Índice de Massa Corporal (IMC) de uma Pessoa 
+// O imc é definido com o Peso (kg) pelo quadrado da altura (m)
+// O imc ideal varia entre 26 e 28,5
+	
+	// Declaração das variáveis: Entrada de Dados
+	int peso;
+	float altura;
+	
+	// Dando valores Iniciais para as variáveis
+peso = 0;
+altura = 1;	
+
+	// Interface com o usuário: Entrada de Dados Efetiva
+	printf ("Digite seu peso");
+	scanf ("%d", & peso);
+	printf ("Digite a sua altura");
+	scanf ("%f", & altura);
+	
+	// Processamento e Saída
+	float imc = peso / (altura*altura);
+	printf("Seu imc = %.2f \n", imc);
+	
+	if (imc < 18.5)
+    printf ("o usuário está subnutrido (abaixo do peso)\n");
+    
+    if (imc > 18.5 && imc < 25)
+    printf ("O usuário está tem o peso Ideal\n");
+	
+	if (imc > 25)
+	printf ("esta acima do peso\n");	
+	
+	system("pause");
+	
+	return 0;
+
+}
